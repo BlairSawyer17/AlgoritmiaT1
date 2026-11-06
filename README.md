@@ -1,3 +1,9 @@
+REQUISITOS:
+    -Node.js
+    -npm
+   Dependencias:
+        -prompt-sync
+
 # CASOS DE PRUEBAS DE BORDE
 
 ## registro.js
