@@ -1,23 +1,36 @@
-REQUISITOS:
+# REQUISITOS:
     -Node.js
     -npm
-   Dependencias:
+## Dependencias:
         -prompt-sync
 
-# CASOS DE PRUEBAS DE BORDE
+## CASOS DE PRUEBAS S-2:
 
-## registro.js
+### registro.js
+
+#### Lógica:
+    -El usuario igresa su edad y se guarda en edad.
+    -Si la edad NO es mayor a 0, entonces sale un mensaje de error y finaliza el programa.
+    -El usuario ingresa S si no acepta los términos y N si no acepta los términos. Se guarda en terms.
+    -El texto en terms se convierte en mayúsculas y se guarda en acepto.
+    -Si el texto en acepto NO es igual a "S" o igual a "N", entonces sale error y finaliza el programa.
+    -Si la edad es mayor o igual a 14 y acepto es igual a "S" entonces sale un mensaje de éxito. Sino sale un mensaje de fallo.
+    -Si la edad es menor a 14 sale un mensaje de que el usuario debe tener 14 o más.
+    -Si acepto es "N" sale un mensaje de que el usuario debe aceptar los términos.
 
 | Edad | Acepta términos | Resultado esperado |
 |---:|:---:|---|
 | 18 | S | Registrado |
 | 14 | S | Registrado |
-| 13 | S | Lo siento, debes tener 14 o más |
-| 18 | N | Lo siento, debes aceptar los términos para continuar |
-| 14 | N | Lo siento, debes aceptar los términos para continuar |
+| 13 | S | No registrado. Debes tener 14 o más |
+| 18 | n | No registrado. Debes aceptar los términos para continuar |
+| 14 | N | No registrado. Debes aceptar los términos para continuar |
+| 13 | N | No registrado. Debes tener 14 o más. Debes aceptar los términos para continuar |
 | 18 | s | Registrado |
 
-## validarEdad.js
+### validarEdad.js
+
+#### Lógica:
 
 | Edad | Resultado esperado | Resultado obtenido |
 |---:|---|---|
@@ -28,7 +41,7 @@ REQUISITOS:
 | 120 | Eres mayor de edad, puedes pasar. | Eres mayor de edad, puedes pasar. |
 | 121 | Ingrese una edad válida. | Ingrese una edad válida. |
 
-## parqueadero.js
+### parqueadero.js
 
 | Vehículo | Minutos | Factura | Resultado esperado | Resultado obtenido |
 |---|---:|:---:|---:|---:|
@@ -42,7 +55,7 @@ REQUISITOS:
 | 3 | - | - | Vehículo inválido | Vehículo inválido |
 | Carro | -5 | - | Minutos inválidos | Minutos inválidos |
 
-## semaforo.js
+### semaforo.js
 
 | Unidades existentes | Resultado esperado | Resultado obtenido |
 |---:|---|---|
@@ -53,7 +66,7 @@ REQUISITOS:
 | 11 | Verde: Todo bien | Verde: Todo bien |
 | 100 | Verde: Todo bien | Verde: Todo bien |
 
-## bisiesto.js
+### bisiesto.js
 
 | Año | Resultado esperado | Resultado obtenido |
 |---:|---|---|
