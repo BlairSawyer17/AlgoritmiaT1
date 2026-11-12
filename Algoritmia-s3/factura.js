@@ -5,7 +5,7 @@ function calcularPorcentaje(porcentaje, subtotal) {
 
 const prompt = require("prompt-sync")({ sigint: true });
 
-let menu = 0, sancocho = 0, ajiaco = 0; bandeja = 0, patacon = 0, hamburguesa = 0, subtotal = 0.0;
+let menu = 0, sancocho = 0, ajiaco = 0, bandeja = 0, patacon = 0, hamburguesa = 0, subtotal = 0.0;
 
 do {
     console.log("1.Sancocho: $20.000\n2.Ajiáco: $25.000\n3.Bandeja paisa: $26.500\n4.Patacón: $15.000\n5.Hamburguesa: $19.500");
