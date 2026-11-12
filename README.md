@@ -257,7 +257,7 @@ Salida: `Carros atendidos: 2. Total adquirido: $ 8000`
 | 5, 4, 3, 2, 1 | 3 | 3 | 5 | 1 | Orden descendente |
 | 1, 2, 3, 4, 5 | 3 | 3 | 5 | 1 | Orden ascendente |
 | -1, -2, -3, -4, -5 | -3 | 0 | 0 | -5 | Falla: notMax queda en 0 porque se inicializa en 0 |
-| abc, 3, 3, 3, 3 | NaN | - | - | - | Falla: no hay validación de entrada |
+| abc, 3, 3, 3, 3 | NaN | - | - | - | No hay validación de entrada |
 
 #### Tabla de traza (notas: 4.0, 2.5, 3.0, 5.0, 1.5)
 
@@ -312,9 +312,9 @@ Promedio = 16.0 / 5 = 3.2. Salida: promedio 3.2, 3 aprobados, máxima 5, mínima
 | 6, 0 | Opción inválida ignorada, termina sin consumo |
 | -1, 0 | Opción inválida ignorada, termina sin consumo |
 | abc, 0 | NaN ignorado, termina sin consumo |
-| 1.9, 0 | parseInt lo trunca a 1: cuenta como sancocho |
+| 1.9, 0 | parseInt lo redondea a 1: cuenta como sancocho |
 | 1, 2, 3, 4, 5, 0 | Subtotal 106.000, propina 10.600, impuesto 8.480, total 125.080 |
-| 5 repetido 100 veces, 0 | Subtotal 1.950.000 (el programa no tiene límite) |
+| 5 repetido 100 veces, 0 | Subtotal 1.950.000 |
 
 #### Tabla de traza (entradas: 1, 3, 3, 0)
 
